@@ -1,0 +1,7 @@
+<h1><%= @task.title %></h1>
+
+<p><strong>Details:</strong> <%= @task.details %></p>
+
+<p>This task is <%= "NOT " if !@task.completed %>completed</p>
+
+<p><%= link_to "Back to list", tasks_path %> || <%= link_to "Update", edit_task_path %></p>
